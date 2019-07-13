@@ -1,0 +1,9 @@
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\bin\Debug\netcoreapp2.2\url-shortener-dotnet-core.deps.json
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\bin\Debug\netcoreapp2.2\url-shortener-dotnet-core.dll
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\bin\Debug\netcoreapp2.2\url-shortener-dotnet-core.pdb
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.csprojAssemblyReference.cache
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.csproj.CoreCompileInputs.cache
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.AssemblyInfoInputs.cache
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.AssemblyInfo.cs
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.dll
+C:\Users\NaimSerin\Documents\GitHub\url-shortener-dotnet-core\url-shortener-dotnet-core\obj\Debug\netcoreapp2.2\url-shortener-dotnet-core.pdb
