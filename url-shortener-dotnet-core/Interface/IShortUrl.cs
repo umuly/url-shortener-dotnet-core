@@ -10,5 +10,7 @@ namespace url_shortener_dotnet_core.Interface
     public interface IShortUrl
     {
         ResponseMain SingleCreateShortUrl(ShortUrl shortUrl);
+        ResponseMain MultipleCreateShortUrl(List<ShortUrl> shortUrl);
+        
     }
 }

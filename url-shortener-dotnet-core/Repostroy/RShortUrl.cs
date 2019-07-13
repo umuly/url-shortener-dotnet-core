@@ -19,15 +19,45 @@ namespace url_shortener_dotnet_core.Repostroy
             ResponseMain rm = new ResponseMain();
             try
             {
-                //var client = new RestClient("https://localhost:44390/api/url");
                 var client = new RestClient("https://umuly.com/api/url");
                 var request = new RestRequest(Method.POST);
                 request.AddHeader("Authorization", "Bearer " + token);
                 request.AddHeader("cache-control", "no-cache");
                 request.AddHeader("Content-Type", "application/json");
-                request.AddParameter("undefined", "{\n\t\"Title\":\"" + shortUrl.Title + "\",\n\t\"Description\":\"" + shortUrl.Description + "\",\n\t\"Tags\":\"" + shortUrl.Tags + "\",\n\t\"DomainId\":\"" + shortUrl.DomainId + "\",\n\t\"RedirectUrl\":\"" + shortUrl.RedirectUrl + "\",\n\t\"Code\":\"" + shortUrl.Code + "\"\n}", ParameterType.RequestBody);
-                
-                //request.AddParameter("undefined", "{\n\t\"Title\":null,\n\t\"Description\":null,\n\t\"Tags\":null,\n\t\"DomainId\":null,\n\t\"RedirectUrl\":\"http://mysite.com\",\n\t\"Code\":null\n}", ParameterType.RequestBody);
+                request.AddParameter("undefined", "{\"Title\":\"" + shortUrl.Title + "\",\"Description\":\"" + shortUrl.Description + "\",\"Tags\":\"" + shortUrl.Tags + "\",\"DomainId\":\"" + shortUrl.DomainId + "\",\"RedirectUrl\":\"" + shortUrl.RedirectUrl + "\",\"Code\":\"" + shortUrl.Code + "\"\n}", ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                var content = response.Content; // raw content as string
+
+                rm = JsonConvert.DeserializeObject<ResponseMain>(content);
+                return rm;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public ResponseMain MultipleCreateShortUrl(List<ShortUrl> shortUrls)
+        {
+            ResponseMain rm = null;
+            try
+            {
+                string data = "[";
+                foreach (var shortUrl in shortUrls)
+                {
+                    data += "{\"Title\":\"" + shortUrl.Title + "\",\"Description\":\"" + shortUrl.Description + "\",\"Tags\":\"" + shortUrl.Tags + "\",\"DomainId\":\"" + shortUrl.DomainId + "\",\"RedirectUrl\":\"" + shortUrl.RedirectUrl + "\",\"Code\":\"" + shortUrl.Code + "\"},";
+                    
+                }
+                data += "]";
+
+                var client = new RestClient("https://umuly.com/api/url/MultipleAdd");
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Authorization", "Bearer " + token);
+                request.AddHeader("cache-control", "no-cache");
+                request.AddHeader("Content-Type", "application/json");
+                request.AddParameter("undefined", data, ParameterType.RequestBody);
+
                 IRestResponse response = client.Execute(request);
                 var content = response.Content; // raw content as string
 
