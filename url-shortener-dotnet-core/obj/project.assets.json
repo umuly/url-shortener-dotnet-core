@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
+      "projectUniqueName": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
       "projectName": "url-shortener-dotnet-core",
-      "projectPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
+      "projectPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
       "packagesPath": "C:\\Users\\NaimSerin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\obj\\",
+      "outputPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
