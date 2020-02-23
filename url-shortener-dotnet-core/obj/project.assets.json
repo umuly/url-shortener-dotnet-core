@@ -757,11 +757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
+      "projectUniqueName": "D:\\Github\\umuly1\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
       "projectName": "url-shortener-dotnet-core",
-      "projectPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
+      "projectPath": "D:\\Github\\umuly1\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\url-shortener-dotnet-core.csproj",
       "packagesPath": "C:\\Users\\NaimSerin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NaimSerin\\Documents\\GitHub\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\obj\\",
+      "outputPath": "D:\\Github\\umuly1\\url-shortener-dotnet-core\\url-shortener-dotnet-core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -807,10 +807,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
